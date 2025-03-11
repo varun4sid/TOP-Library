@@ -8,6 +8,29 @@
 </head>
 <body>
     <div id="container"></div>
+    <button id="add">Add New Book</button>
+    <dialog>
+        <form method="dialog">
+            <fieldset>
+                <legend>Enter the Book Details</legend>
+                <label for="title">Title :
+                    <input type="text" id="title" required>
+                </label>
+                <label for="author">Author :
+                    <input type="text" id="author" required>
+                </label>
+                <label for="pages">Pages :
+                    <input type="number" id="pages" min="0" required>
+                </label>
+            </fieldset>
+            <label for="status">
+                <input type="checkbox" id="status" value="1">
+                Have you read the book?
+            </label>
+            <button type="submit" id="dialog-submit">Submit</button>
+            <button type="reset" id="dialog-reset">Reset</button>
+        </form>
+    </dialog>
     <script src="./script.js"></script>
 </body>
 </html>
